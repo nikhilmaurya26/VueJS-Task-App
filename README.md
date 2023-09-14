@@ -26,7 +26,7 @@ Task Filtering: Implement filtering options to filter tasks based on completion 
 
 
 
-![Screenshot 1](Screenshot (18).png)
+![Screenshot 1](./Screenshot%20(18).png)
 
 
 ## Contributing
