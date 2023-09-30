@@ -146,3 +146,62 @@
   .taskItems .toggle.toggle-completed {
     text-decoration:line-through;
   }
+
+
+  .custom-dropdown {
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add border radius */
+    padding: 5px; /* Add padding to the select element */
+    background-color: lightblue; /* Light blue background color */
+    outline: none; /* Remove the default focus outline */
+    cursor: pointer; /* Show pointer cursor on hover */
+  }
+  
+  /* Style the dropdown arrow */
+  .custom-dropdown::after {
+    content: '\25BC'; /* Unicode arrow character */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Allow clicks on the select element, not the arrow */
+  }
+  
+  /* Style the dropdown options */
+  .custom-dropdown option {
+    background-color: white; /* Background color for options */
+    color: black; /* Text color for options */
+  }
+  
+  /* Style the selected option */
+  .custom-dropdown option:checked {
+    background-color: lightblue; /* Background color for the selected option */
+    font-weight: bold; /* Bold font for the selected option */
+  }
+
+  .custom-filter-dropdown {
+    display: block; /* Change to block display to occupy full width */
+    margin-top: 20px; /* Add space above the dropdown */
+    margin-bottom: 20px; /* Add space below the dropdown */
+  }
+  
+  .custom-filter-dropdown select {
+    width: 100%; /* Match the width of the "New Task" input */
+    height: 40px; /* Match the height of the "New Task" input */
+    padding: 5px; /* Add padding to match the input */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add border radius */
+    background-color: lightblue; /* Light blue background color */
+    outline: none; /* Remove the default focus outline */
+    cursor: pointer; /* Show pointer cursor on hover */
+  }
+  
+  /* Style the dropdown arrow */
+  .custom-filter-dropdown::after {
+    content: '\25BC'; /* Unicode arrow character */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Allow clicks on the select element, not the arrow */
+  }
